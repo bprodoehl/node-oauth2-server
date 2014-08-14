@@ -230,7 +230,7 @@ describe('Grant', function() {
           grantTypeAllowed: function (clientId, grantType, callback) {
             callback(false, true);
           },
-          getUser: function (uname, pword, callback) {
+          getUser: function (uname, pword, req, callback) {
             callback(false, { id: 1 });
           },
           generateToken: function (type, req, callback) {
@@ -261,7 +261,7 @@ describe('Grant', function() {
           grantTypeAllowed: function (clientId, grantType, callback) {
             callback(false, true);
           },
-          getUser: function (uname, pword, callback) {
+          getUser: function (uname, pword, req, callback) {
             callback(false, { id: 1 });
           },
           generateToken: function (type, req, callback) {
@@ -293,7 +293,7 @@ describe('Grant', function() {
           grantTypeAllowed: function (clientId, grantType, callback) {
             callback(false, true);
           },
-          getUser: function (uname, pword, callback) {
+          getUser: function (uname, pword, req, callback) {
             callback(false, { id: 1 });
           },
           saveAccessToken: function (token, clientId, expires, user, cb) {
@@ -325,7 +325,7 @@ describe('Grant', function() {
           grantTypeAllowed: function (clientId, grantType, callback) {
             callback(false, true);
           },
-          getUser: function (uname, pword, callback) {
+          getUser: function (uname, pword, req, callback) {
             callback(false, { id: 1 });
           },
           saveAccessToken: function (token, clientId, expires, user, cb) {
@@ -362,7 +362,7 @@ describe('Grant', function() {
           grantTypeAllowed: function (clientId, grantType, callback) {
             callback(false, true);
           },
-          getUser: function (uname, pword, callback) {
+          getUser: function (uname, pword, req, callback) {
             callback(false, { id: 1 });
           },
           saveAccessToken: function (token, clientId, expires, user, cb) {
@@ -400,7 +400,7 @@ describe('Grant', function() {
           grantTypeAllowed: function (clientId, grantType, callback) {
             callback(false, true);
           },
-          getUser: function (uname, pword, callback) {
+          getUser: function (uname, pword, req, callback) {
             callback(false, { id: 1 });
           },
           saveAccessToken: function (token, clientId, expires, user, cb) {
@@ -444,7 +444,7 @@ describe('Grant', function() {
           grantTypeAllowed: function (clientId, grantType, callback) {
             callback(false, true);
           },
-          getUser: function (uname, pword, callback) {
+          getUser: function (uname, pword, req, callback) {
             callback(false, { id: 1 });
           },
           saveAccessToken: function (token, clientId, expires, user, cb) {
@@ -490,7 +490,7 @@ describe('Grant', function() {
           grantTypeAllowed: function (clientId, grantType, callback) {
             callback(false, true);
           },
-          getUser: function (uname, pword, callback) {
+          getUser: function (uname, pword, req, callback) {
             callback(false, { id: 1 });
           },
           saveAccessToken: function (token, clientId, expires, user, cb) {

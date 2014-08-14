@@ -163,9 +163,11 @@ Note: see https://github.com/thomseddon/node-oauth2-server/tree/master/examples/
 
 ### Required for `password` grant type
 
-#### getUser (username, password, callback)
+#### getUser (username, password, req, callback)
 - *string* **username**
 - *string* **password**
+- *object* **req**
+ - The raw request
 - *function* **callback (error, user)**
  - *mixed* **error**
      - Truthy to indicate an error
@@ -285,7 +287,7 @@ grant_type=password&username=johndoe&password=A3ddj3w
 This will then call the following on your model (in this order):
  - getClient (clientId, clientSecret, callback)
  - grantTypeAllowed (clientId, grantType, callback)
- - getUser (username, password, callback)
+ - getUser (username, password, req, callback)
  - saveAccessToken (accessToken, clientId, expires, user, callback)
  - saveRefreshToken (refreshToken, clientId, expires, user, callback) **(if using)**
 

@@ -73,7 +73,7 @@ describe('Granting with password grant type', function () {
         grantTypeAllowed: function (clientId, grantType, callback) {
           callback(false, true);
         },
-        getUser: function (uname, pword, callback) {
+        getUser: function (uname, pword, req, callback) {
           uname.should.equal('thomseddon');
           pword.should.equal('nightworld');
           callback(false, false); // Fake invalid user
